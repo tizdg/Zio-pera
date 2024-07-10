@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | realtà aumentata</title>
+    <title>Unity WebGL Player | WebArDemo</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
          html{
@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <script src="Build/Web Ar.loader.js"></script>
+    <script src="Build/Zio-pera.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -73,13 +73,13 @@
                 document.getElementById("startWebcamDiv").style.display = "none";
 
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Web Ar.data",
-                    frameworkUrl: "Build/Web Ar.framework.js",
-                    codeUrl: "Build/Web Ar.wasm",
+                    dataUrl: "Build/Zio-pera.data",
+                    frameworkUrl: "Build/Zio-pera.framework.js",
+                    codeUrl: "Build/Zio-pera.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "realtà aumentata",
-                    productVersion: "0.1",
+                    productName: "WebArDemo",
+                    productVersion: "1.0",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                     // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
